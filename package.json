@@ -1,0 +1,33 @@
+{
+  "name": "time2date",
+  "version": "1.0.0",
+  "description": "A package to convert between timestamp and date string.",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "bin": {
+    "t2d": "./dist/bin/t2d.js",
+    "d2t": "./dist/bin/d2t.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "timestamp",
+    "date"
+  ],
+  "author": "fooyun",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.8.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
