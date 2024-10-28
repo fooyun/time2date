@@ -1,5 +1,5 @@
 export function convertTimestampToDate(timestamp?: string): string {
-  if (typeof timestamp === "undefined") {
+  if (typeof timestamp === 'undefined') {
     return new Date().toISOString();
   }
   return timestampToDate(Number(timestamp));
@@ -10,12 +10,12 @@ export function timestampToDate(timestamp: number): string {
     const date = new Date(timestamp);
     return date.toISOString();
   } catch (e) {
-    return "Invalid Date";
+    return 'Invalid Date';
   }
 }
 
 export function convertDateToTimestamp(dateString?: string): number {
-  if (typeof dateString === "undefined") {
+  if (typeof dateString === 'undefined') {
     return Date.now();
   }
   return dateToTimestamp(dateString);
