@@ -6,7 +6,7 @@ A package to convert between timestamp and date string.
 
 ## t2d
 
-Convert timestamp(seconds) to date string. Default current time.
+Convert timestamp(milliseconds) to date string. Default current time.
 
 ```bash
 # example
